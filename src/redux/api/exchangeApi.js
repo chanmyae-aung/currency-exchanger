@@ -20,7 +20,21 @@ export const exchangeApi = createApi({
       }),
       providesTags: ["exchangeApi"],
     }),
+    getFluctuation: builder.query({
+      query: ({start_date, end_date}) => ({
+        url: `/fluctuation?start_date=${start_date}&end_date=${end_date}`,
+        headers: { apikey: "wCe2ol91D3saaDFiZdFAVcmixquruDYQ" },
+      }),
+      providesTags: ['exchangeApi']
+    }),
+    getLatest: builder.query({
+      query: ({symbols, base}) => ({
+        url: `/latest?symbols=${symbols}&base=${base}`,
+        headers: { apikey: "wCe2ol91D3saaDFiZdFAVcmixquruDYQ" },
+      }),
+      providesTags: ['exchangeApi']
+    })
   }),
 });
 
-export const { useGetConvertQuery, useGetSymbolsQuery } = exchangeApi;
+export const { useGetConvertQuery, useGetSymbolsQuery, useGetFluctuationQuery, useGetLatestQuery } = exchangeApi;

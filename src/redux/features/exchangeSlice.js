@@ -1,9 +1,11 @@
 import { createSlice } from "@reduxjs/toolkit"
 
 const initialState = {
-    from: null,
-    to: null,
-    amount: 1,
+    from: "USD",
+    to: "MMK",
+    amount: 0,
+    fullName: "United States Dollor",
+    toFullName: "Myanmar Kyat",
 }
 
 export const exchangeSlice = createSlice({
@@ -19,8 +21,15 @@ export const exchangeSlice = createSlice({
         addAmount: (state, {payload}) => {
             state.amount = payload.amount
         },
+        addFullName: (state, {payload}) => {
+            state.fullName = payload.fullName
+        },
+        addToFullName: (state, {payload}) => {
+            state.toFullName = payload.toFullName
+        },
+
     }
 })
 
-export const {addFromValue, addToValue, addAmount } = exchangeSlice.actions
+export const {addFromValue, addToValue, addAmount, addFullName, addToFullName} = exchangeSlice.actions
 export default exchangeSlice.reducer
