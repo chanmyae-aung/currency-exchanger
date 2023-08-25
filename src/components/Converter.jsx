@@ -31,8 +31,8 @@ export default function Converter() {
   const toValue = exchangeSlice?.toValue;
   // const amount = exchangeSlice?.amount
 
-  const { data: convert, isLoading } = useGetConvertQuery({
-    to,
+  const { data: convert } = useGetConvertQuery({
+    to: "MMK",
     from,
     amount,
   });
@@ -40,10 +40,6 @@ export default function Converter() {
   const { data } = useGetSymbolsQuery();
   const symbols = data?.symbols;
 
-  const { data: fluctuation } = useGetFluctuationQuery({
-    start_date: "2023-07-01",
-    end_date: "2023-08-01",
-  });
 
   useMemo(() => {
     for (const property in symbols) {
@@ -54,17 +50,13 @@ export default function Converter() {
     }
   }, [symbols]);
 
-  const { data: time } = useGetTimeSeriesQuery({
-    start_date: "2023-07-01",
-    end_date: "2023-08-01",
-    base: "usd",
-    symbols: "MMK",
-  });
-  console.log(time);
 
   return (
     <main id="home" className="">
-      
+     <div className="text-primary text-center text-lg my-5">
+     <h1 className="text-[3rem]">Fx Portal</h1>
+     <p className="font-semibold px-40 my-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore magni veniam officiis. Laboriosam quasi atque labore, vel voluptate cupiditate quisquam.</p>
+     </div>
       <section className="w-full h-full shadow-lg flex flex-col items-center gap-10 rounded-lg p-5 bg-white">
       <h1 className="text-center mb-5 text-primary">
         Convert {exchangeSlice?.fullName} to {exchangeSlice?.toFullName}
@@ -76,7 +68,7 @@ export default function Converter() {
             id="combo-box-demo"
             options={currency}
             sx={{ width: 500}}
-            renderInput={(params) => <TextField {...params} label="From" />}
+            renderInput={(params) => <TextField  {...params} label="From" />}
             onChange={(event, newValue) => {
               setFrom(newValue.label.slice(0, 3));
               dispatch(addFromValue({ from: newValue.label.slice(0, 3) }));
@@ -108,10 +100,12 @@ export default function Converter() {
           </Box>
         </div>
         <div className="flex flex-col gap-5">
-          <Autocomplete
+          {/* <Autocomplete
             disablePortal
             id="combo-box-demo"
             options={currency}
+            getOptionDisabled
+            value={`MMK ${exchangeSlice?.toFullName}`}
             sx={{ width: 500 }}
             renderInput={(params) => <TextField {...params} label="To" />}
             onChange={(event, newValue) => {
@@ -129,7 +123,8 @@ export default function Converter() {
             onInputChange={(event, newInputValue) => {
               setToInputValue(newInputValue);
             }}
-          />
+          /> */}
+          <TextField value={`MMK ${exchangeSlice?.toFullName}`} id="outlined-basic" label="To" variant="outlined" />
           <Box
             component="form"
             sx={{

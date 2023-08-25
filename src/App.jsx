@@ -6,6 +6,7 @@ import Converter from "./components/Converter";
 import ContactUs from "./components/ContactUs";
 import logo from "./assets/logo.png";
 import AboutUs from "./components/AboutUs";
+import RealTimeRate from "./components/RealTimeRate";
 
 export default function App() {
   return (
@@ -15,13 +16,14 @@ export default function App() {
           <div className="px-10 flex items-center justify-between">
             <div className="flex items-center gap-3">
               <img className="w-10 " src={logo} alt="" />
-              {/* <h1 >CMX</h1> */}
+              <h2>Fx Portal</h2>
             </div>
             <NavItem />
           </div>
         </Header>
         <Content className="py-10 px-20 bg pt-28">
           <Converter/>
+          <RealTimeRate/>
         </Content>
         <section className="flex flex-col gap-20">
           <AboutUs/>

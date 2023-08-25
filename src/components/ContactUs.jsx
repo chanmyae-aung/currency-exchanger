@@ -19,7 +19,7 @@ export default function ContactUs() {
             </div>
         </section>
         <section className='flex items-center justify-center py-8 mt-10 bg-blue-900 text-white'>
-            <p>Copyright © 2022 unimoni. All Rights Reserved.</p>
+            <p>Copyright © 2022 fxportal. All Rights Reserved.</p>
         </section>
     </main>
   )

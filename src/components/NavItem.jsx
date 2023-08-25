@@ -20,7 +20,7 @@ export default function NavItem() {
         </li>
         <li className="hover:text-white transition-all ease-linear duration-150">
           <Link
-            to="live"
+            to="fluctuation"
             className="cursor-pointer font-bold transition-all duration-100"
             spy={true}
             smooth={true}
@@ -28,7 +28,7 @@ export default function NavItem() {
             duration={500}
             activeClass="nav-active"
           >
-            Live Rates
+            Fluctuation Rates
           </Link>
         </li>
         <li className="hover:text-white transition-all ease-linear duration-150">
@@ -50,7 +50,7 @@ export default function NavItem() {
             className="cursor-pointer hover:font-bold transition-all duration-100"
             spy={true}
             smooth={true}
-            offset={0}
+            offset={-130}
             duration={500}
             activeClass="nav-active"
           >
