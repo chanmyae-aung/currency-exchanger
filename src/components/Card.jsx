@@ -28,12 +28,12 @@ export default function CurrencyLists({
   return (
     <div className="w-full rounded-lg overflow-hidden">
       <div className="flex bg-blue-200 p-5 justify-center">
-        <h2 className="text-xl font-bold">
+        <h2 className="text-lg font-bold">
           {fullName} to {toFullName}
         </h2>
       </div>
       <TableContainer
-        sx={{ paddingX: "50px" }}
+        sx={{ paddingX: "50px", borderRadius: 0 }}
         variant="none"
         component={Paper}
       >
@@ -54,12 +54,12 @@ export default function CurrencyLists({
           <TableBody>
             {rows?.map((i) => (
             <TableRow>
-              <TableCell sx={{ fontSize: "1.1rem" }} component="th" scope="row">
+              <TableCell sx={{ fontSize: "1rem" }} component="th" scope="row">
                 <span className="font-semibold">{i}</span> {fromValue}
               </TableCell>
-              <TableCell sx={{ fontSize: "1.1rem" }} align="right">
+              <TableCell sx={{ fontSize: "1rem" }} align="right">
                 <span className={`${isLoading && "animate-pulse"}`}>
-                  <span className={`${isLoading && "hidden"} font-semibold`}>{reverse ? (i/(data?.result)).toFixed(3) : (data?.result * i).toFixed(3)}</span> {toValue}
+                  <span className={`${isLoading && "hidden"} font-semibold`}>{reverse ? (i/(data?.result)).toFixed(3) : (data?.result * i).toFixed(2)}</span> {toValue}
                 </span>
               </TableCell>
             </TableRow>

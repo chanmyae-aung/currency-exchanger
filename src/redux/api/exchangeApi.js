@@ -33,8 +33,15 @@ export const exchangeApi = createApi({
         headers: { apikey: "wCe2ol91D3saaDFiZdFAVcmixquruDYQ" },
       }),
       providesTags: ['exchangeApi']
+    }),
+    getTimeSeries: builder.query({
+      query: ({start_date, end_date}) => ({
+        url: `/timeseries?start_date=${start_date}&end_date=${end_date}`,
+        headers: { apikey: "wCe2ol91D3saaDFiZdFAVcmixquruDYQ" },
+      }),
+      providesTags: ['exchangeApi']
     })
   }),
 });
 
-export const { useGetConvertQuery, useGetSymbolsQuery, useGetFluctuationQuery, useGetLatestQuery } = exchangeApi;
+export const { useGetConvertQuery, useGetSymbolsQuery, useGetFluctuationQuery, useGetLatestQuery, useGetTimeSeriesQuery } = exchangeApi;

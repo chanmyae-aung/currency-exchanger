@@ -11,3 +11,23 @@ h1{
   font-size: x-large;
   font-weight: 700;
 }
+h2{
+  font-size: large;
+  font-weight: 700;
+}
+.bg {
+  background-image: url('./assets/currency.jpg');
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+}
+.text-primary {
+  @apply text-[#19269b]
+}
+.bg-primary{
+  @apply bg-[#FFCF00]
+}
+.nav-active{
+  color: white;
+}
