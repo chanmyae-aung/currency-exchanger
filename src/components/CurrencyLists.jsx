@@ -3,7 +3,6 @@ import Card from "./Card";
 import { useGetLatestQuery } from "../redux/api/exchangeApi";
 import { useSelector } from "react-redux";
 
-
 export default function CurrencyLists() {
   const { data } = useGetLatestQuery({ symbols: "USD", base: "MMK" });
   console.log(data);
@@ -17,19 +16,24 @@ export default function CurrencyLists() {
   return (
     <main>
       <div className="flex gap-10 my-10 rounded-lg">
-        <Card
-          fromValue={fromValue}
-          fullName={fullName}
-          toValue={toValue}
-          toFullName={toFullName}
-        />
-        <Card
-          reverse={true}
-          fromValue={toValue}
-          fullName={toFullName}
-          toValue={fromValue}
-          toFullName={fullName}
-        />
+        <div className="w-full">
+          <Card
+            reverse={true}
+            fromValue={toValue}
+            fullName={toFullName}
+            toValue={fromValue}
+            toFullName={fullName}
+          />
+        </div>
+        <div className="hidden md:flex w-full">
+          <Card
+            reverse={true}
+            fromValue={toValue}
+            fullName={toFullName}
+            toValue={fromValue}
+            toFullName={fullName}
+          />
+        </div>
         {/* <FluctuationCard/> */}
       </div>
       {/* <RealTimeRate /> */}

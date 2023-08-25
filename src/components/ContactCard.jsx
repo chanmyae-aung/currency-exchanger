@@ -4,7 +4,7 @@ import { MdEmail, MdBusinessCenter, MdLocationOn } from "react-icons/md";
 
 export default function ContactCard({ business, admin, register }) {
   return (
-    <div className="flex w-full gap-10  p-5 bg-white rounded-lg shadow">
+    <div className="flex flex-col md:flex-row w-full gap-5 md:gap-10  p-5 bg-white rounded-lg shadow">
       <div>
         {(business && <MdBusinessCenter className="text-primary text-3xl" />) ||
           (admin && <MdLocationOn className="text-primary text-3xl" />) ||

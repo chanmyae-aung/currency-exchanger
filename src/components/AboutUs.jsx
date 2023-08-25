@@ -6,18 +6,18 @@ export default function AboutUs() {
     <main id="about">
       
       
-      <section className="flex flex-col w-full gap-10 justify-center px-20">
+      <section className="flex flex-col w-full gap-5 md:gap-10 justify-center px-5 md:px-20">
         <div className="text-center">
           <h1 className="text-3xl">About Us</h1>
-          <p className="text-lg text-slate-700 px-32">
+          <p className="text-lg text-slate-700 md:px-32">
           We don’t do complicated, automated systems. We have offices around the world, and we’re here to help you whenever you need it.
           </p>
         </div>
-        <div className="flex gap-10">
+        <div className="flex md:flex-row flex-col gap-5 md:gap-10">
           <AboutCard />
           <AboutCard business />
         </div>
-        <div className="flex gap-10">
+        <div className="flex md:flex-row flex-col gap-5 md:gap-10">
           <AboutCard register />
           <AboutCard admin />
         </div>
@@ -25,7 +25,7 @@ export default function AboutUs() {
           <h2 className="my-5 ">
             Outward remittance from Myanmar to other countries
           </h2>
-          <div className="flex items-center justify-center gap-10">
+          <div className="flex flex-wrap items-center justify-center gap-5 md:gap-10">
             <div className="">
               <img
                 className="w-52 mb-2 p-5 bg-yellow-100 rounded-lg shadow"

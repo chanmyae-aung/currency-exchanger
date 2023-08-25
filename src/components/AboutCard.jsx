@@ -8,7 +8,7 @@ import { TfiWorld } from "react-icons/tfi";
 
 export default function AboutCard({ business, admin, register }) {
   return (
-    <div className="flex w-full gap-10 items-center  p-5 px-10 bg-white rounded-lg shadow">
+    <div className="flex w-full flex-col md:flex-row gap-5 md:gap-10 items-center  p-5 md:px-10 bg-white rounded-lg shadow">
       <div>
         {(business && (
           <BsBuildingsFill className="text-primary text-[3rem]" />
