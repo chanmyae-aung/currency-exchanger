@@ -89,7 +89,7 @@ export default function App() {
             </div>
           </div>
         </Header>
-        <Content className="py-10 md:px-20 bg pt-28 w-full">
+        <Content className="py-10 md:px-20 bg pt-28 mb-16 w-full">
           <Converter />
           <RealTimeRate />
         </Content>

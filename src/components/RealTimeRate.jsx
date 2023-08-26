@@ -36,7 +36,7 @@ export default function RealTimeRate() {
         setCurrency((prev) => [...prev, singleObject]);
       }
     }
-  }, [data]);
+  }, [rates]);
   return (
     <main id="fluctuation">
       <img
@@ -51,23 +51,23 @@ export default function RealTimeRate() {
         </p>
       </div>
       <div className="px-5 md:px-0">
-        <TableContainer sx={{ maxHeight: 500 }} component={Paper}>
+        <TableContainer className="md:px-10" sx={{ maxHeight: 500 }} component={Paper}>
           <Table stickyHeader sx={{ minWidth: 650 }} aria-label="simple table">
-            <TableHead>
-              <TableRow>
-                <TableCell sx={{ fontWeight: 600, fontSize: 15 }}>
+            <TableHead >
+              <TableRow >
+                <TableCell sx={{ fontWeight: 600, fontSize: 16, color: "#214FC6" }}>
                   1 EUR (Based)
                 </TableCell>
-                <TableCell sx={{ fontWeight: 600, fontSize: 15 }} align="right">
+                <TableCell sx={{ fontWeight: 600, fontSize: 16, color: "#214FC6" }} align="right">
                   Start Rate
                 </TableCell>
-                <TableCell sx={{ fontWeight: 600, fontSize: 15 }} align="right">
+                <TableCell sx={{ fontWeight: 600, fontSize: 16, color: "#214FC6" }} align="right">
                   End Rate
                 </TableCell>
-                <TableCell sx={{ fontWeight: 600, fontSize: 15 }} align="right">
+                <TableCell sx={{ fontWeight: 600, fontSize: 16, color: "#214FC6" }} align="right">
                   Change Value
                 </TableCell>
-                <TableCell sx={{ fontWeight: 600, fontSize: 15 }} align="right">
+                <TableCell sx={{ fontWeight: 600, fontSize: 16, color: "#214FC6" }} align="right">
                   Change Percentage
                 </TableCell>
               </TableRow>
@@ -80,26 +80,26 @@ export default function RealTimeRate() {
                   sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
                 >
                   <TableCell
-                    sx={{ fontWeight: 500, fontSize: 15 }}
+                    sx={{ fontWeight: 600, fontSize: 15, color: "#214FC6" }}
                     component="th"
                     scope="row"
                   >
                     {i.currency}
                   </TableCell>
                   <TableCell
-                    sx={{ fontWeight: 500, fontSize: 15 }}
+                    sx={{ fontWeight: 600, fontSize: 15 }}
                     align="right"
                   >
                     {i.start_rate}
                   </TableCell>
                   <TableCell
-                    sx={{ fontWeight: 500, fontSize: 15 }}
+                    sx={{ fontWeight: 600, fontSize: 15 }}
                     align="right"
                   >
                     {i.end_rate}
                   </TableCell>
                   <TableCell
-                    sx={{ fontWeight: 500, fontSize: 15 }}
+                    sx={{ fontWeight: 600, fontSize: 15 }}
                     align="right"
                   >
                     <div className="flex items-center justify-end">
@@ -118,7 +118,7 @@ export default function RealTimeRate() {
                     </div>
                   </TableCell>
                   <TableCell
-                    sx={{ fontWeight: 500, fontSize: 15 }}
+                    sx={{ fontWeight: 600, fontSize: 15 }}
                     align="right"
                   >
                     <div className="flex items-center justify-end">

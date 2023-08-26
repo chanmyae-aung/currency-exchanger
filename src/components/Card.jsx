@@ -27,13 +27,15 @@ export default function CurrencyLists({
   const rows = [1, 5, 10, 50, 100, 500, 1000, 5000, 10000, 100000];
   return (
     <div className="w-full rounded-lg overflow-hidden">
-      <div className="flex bg-blue-200 p-5 justify-center">
+      <div className="flex bg-secondary p-5 justify-center">
         <h2 className="text-lg font-bold">
           {fullName} to {toFullName}
         </h2>
       </div>
+      <div>
       <TableContainer
-        sx={{ paddingX: "50px", borderRadius: 0 }}
+        sx={{borderRadius: 0 }}
+        className="md:px-10"
         variant="none"
         component={Paper}
       >
@@ -67,6 +69,7 @@ export default function CurrencyLists({
           </TableBody>
         </Table>
       </TableContainer>
+      </div>
     </div>
   );
 }

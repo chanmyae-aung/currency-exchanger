@@ -59,7 +59,7 @@ export default function Converter() {
         </p>
       </div>
       <section className="w-full h-full shadow-lg flex flex-col items-center md:gap-10 rounded-lg py-5 bg-white">
-        <h1 className="text-center mb-5 text-primary">
+        <h1 className="text-center px-3 mb-5 text-primary">
           Convert {exchangeSlice?.fullName} to {exchangeSlice?.toFullName}
         </h1>
         <div className="flex md:flex-row flex-col gap-5 md:gap-10 justify-center">
@@ -68,7 +68,7 @@ export default function Converter() {
               disablePortal
               id="combo-box-demo"
               options={currency}
-              sx={{ maxWidth: 500 }}
+              sx={{ minWidth: 330 }}
               renderInput={(params) => <TextField {...params} label="From" />}
               onChange={(event, newValue) => {
                 setFrom(newValue.label.slice(0, 3));
@@ -89,7 +89,7 @@ export default function Converter() {
             <Box
               component="form"
               sx={{
-                "& > :not(style)": { maxWidth: 500 },
+                "& > :not(style)": { minWidth: 330 },
               }}
               noValidate
               autoComplete="off"
@@ -139,7 +139,7 @@ export default function Converter() {
             <Box
               component="form"
               sx={{
-                "& > :not(style)": { maxWidth: 500 },
+                "& > :not(style)": { minWidth: 330 },
               }}
               noValidate
               autoComplete="off"

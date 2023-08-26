@@ -18,7 +18,7 @@ export default function ContactUs() {
                 <ContactCard admin/>
             </div>
         </section>
-        <section className='flex items-center justify-center py-8 mt-10 bg-blue-900 text-white'>
+        <section className='flex items-center justify-center py-8 mt-10 bg-[#214FC6] text-white'>
             <p>Copyright © 2022 fxportal. All Rights Reserved.</p>
         </section>
     </main>

@@ -5,7 +5,7 @@ export default function NavItem({toggleDrawer, anchor}) {
   return (
     <main className="">
       <ul className={`flex items-center gap-10 flex-col md:flex-row`}>
-        <li onClick={() => toggleDrawer(anchor, false)} className="hover:text-white transition-all ease-linear duration-150">
+        <li onClick={() => toggleDrawer(anchor, false)} className="text-white transition-all ease-linear duration-150">
           <Link
             to="home"
             className="cursor-pointer hover:font-bold transition-all duration-100"
@@ -18,7 +18,7 @@ export default function NavItem({toggleDrawer, anchor}) {
             Home
           </Link>
         </li>
-        <li onClick={() => toggleDrawer(anchor, false)} className="hover:text-white transition-all ease-linear duration-150">
+        <li onClick={() => toggleDrawer(anchor, false)} className="text-white transition-all ease-linear duration-150">
           <Link
             to="fluctuation"
             className="cursor-pointer font-bold transition-all duration-100"
@@ -31,7 +31,7 @@ export default function NavItem({toggleDrawer, anchor}) {
             Fluctuation Rates
           </Link>
         </li>
-        <li onClick={() => toggleDrawer(anchor, false)} className="hover:text-white transition-all ease-linear duration-150">
+        <li onClick={() => toggleDrawer(anchor, false)} className="text-white transition-all ease-linear duration-150">
           <Link
             to="about"
             className="cursor-pointer hover:font-bold transition-all duration-100"
@@ -44,7 +44,7 @@ export default function NavItem({toggleDrawer, anchor}) {
             About Us
           </Link>
         </li>
-        <li onClick={() => toggleDrawer(anchor, false)} className="hover:text-white transition-all ease-linear duration-150">
+        <li onClick={() => toggleDrawer(anchor, false)} className="text-white transition-all ease-linear duration-150">
           <Link
             to="contact"
             className="cursor-pointer hover:font-bold transition-all duration-100"

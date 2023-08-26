@@ -24,7 +24,9 @@
 *{
   font-family: 'Inter', sans-serif;
 }
-
+body {
+  @apply bg-[#E7EEED]
+}
 h1{
   font-size: x-large;
   font-weight: 700;
@@ -33,33 +35,33 @@ h2{
   font-size: large;
   font-weight: 700;
 }
-.bg {
-  background-image: url('./assets/currency.jpg');
+/* .bg {
+  background-image: url('./assets/currencies.jpg');
   background-position: top;
   background-repeat: no-repeat;
   background-size: contain;
   width: 100%;
-  /* position: sticky; */
-  /* top: 0; */
+
 }
 
-/* @media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
   .bg {
-    background-image: url('./assets/currency.jpg');
+    background-image: url('./assets/mobile-currency.jpg');
     background-position: top;
     background-repeat: no-repeat;
     background-size: contain;
     width: 100%;
-    /* position: sticky; */
-    /* top: 0; */
-  /* } */
-/* } */ 
+  }
+}  */
 .text-primary {
-  @apply text-[#19269b]
+  @apply text-[#214FC6]
 }
 .bg-primary{
-  @apply bg-[#FFCF00]
+  @apply bg-[#FEE934]
+}
+.bg-secondary {
+  @apply bg-[#FFF] text-[#214FC6] border-b
 }
 .nav-active{
-  color: white;
+  @apply text-[#214FC6]
 }
