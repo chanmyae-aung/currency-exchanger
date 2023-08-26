@@ -12,6 +12,8 @@ Before setting up the Currency Exchange Portal, ensure you have the following so
 + Select the source and target currencies from the dropdown menus.
 + Enter the amount to convert to Myanmar Kyat.
 + The converted amount will be displayed along with the exchange rate.
++ You can see more about services we provided in About Us section.
++ If you collaborate with us, please visit the Contact Us section.
 
 ## Main Technologies Used
 + React Js
