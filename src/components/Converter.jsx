@@ -157,7 +157,7 @@ export default function Converter() {
         <div
           className={`${
             !convert?.result && "hidden"
-          } text-lg font-bold text-primary `}
+          } text-lg font-bold text-primary text-center px-5 pt-5`}
         >
           <h2>
             {amount} {exchangeSlice?.fullName} = {convert?.result}{" "}
