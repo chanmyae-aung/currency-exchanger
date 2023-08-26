@@ -17,3 +17,8 @@ Welcome to the Foreign Exchange Portal Website! This platform allows users to ea
 + Material UI (MUI)
 + Tailwind CSS
 + Fixer Api
+
+## Api Endpoints
++ convert (https://api.apilayer.com/fixer/convert?to=${to}&from=${from}&amount=${amount})
++ symbols (https://api.apilayer.com/fixer/symbols)
++ fluctuation (https://api.apilayer.com/fixer/fluctuation?start_date=${start_date}&end_date=${end_date})
