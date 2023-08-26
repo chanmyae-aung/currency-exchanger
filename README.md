@@ -1,5 +1,5 @@
 # Fx Portal (Foreign Exchange Portal)
-Welcome to the Foreign Exchange Portal Website! This platform allows users to easily convert between different currencies to Myanmar Kyat at current exchange rates. This README file provides essential information for setting up the environment, understanding the codebase, and making modifications to the website.
+Welcome to the Foreign Exchange Portal Website! This platform allows users to easily convert between different currencies to Myanmar Kyat at current exchange rates.
 
 ## Getting Started
 Before setting up the Currency Exchange Portal, ensure you have the following software installed:
