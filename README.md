@@ -16,3 +16,4 @@ Welcome to the Foreign Exchange Portal Website! This platform allows users to ea
 + Ant Design (for Layout)
 + Material UI (MUI)
 + Tailwind CSS
++ Fixer Api
