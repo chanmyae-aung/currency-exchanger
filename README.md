@@ -1,12 +1,6 @@
 # Fx Portal (Foreign Exchange Portal)
 Welcome to the Foreign Exchange Portal Website! This platform allows users to easily convert between different currencies to Myanmar Kyat at current exchange rates.
 
-## Getting Started
-Before setting up the Currency Exchange Portal, ensure you have the following software installed:
-
-+ Node.js (version 18.16.0 or higher)
-+ Web browser (Chrome, Firefox, Safari, etc.)
-
 ## Usage
 + Visit the home page to see the latest currency exchange rates and convert other currencies to Myanmar Kyat.
 + Select the source and target currencies from the dropdown menus.
