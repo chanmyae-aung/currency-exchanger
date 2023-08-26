@@ -24,7 +24,6 @@ export const exchangeApi = createApi({
       query: ({start_date, end_date}) => ({
         url: `/fluctuation?start_date=${start_date}&end_date=${end_date}`,
         headers: { apikey: "KPtBxjXXq1Wz4dU7ZxvSMIg58nHHXnk2" },
-        // base : "USD"
       }),
       providesTags: ['exchangeApi']
     }),

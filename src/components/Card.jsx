@@ -54,8 +54,8 @@ export default function CurrencyLists({
             </TableRow>
           </TableHead>
           <TableBody>
-            {rows?.map((i) => (
-            <TableRow>
+            {rows?.map((i,index) => (
+            <TableRow key={index}>
               <TableCell sx={{ fontSize: "1rem" }} component="th" scope="row">
                 <span className="font-semibold">{i}</span> {fromValue}
               </TableCell>

@@ -74,7 +74,6 @@ export default function RealTimeRate() {
             </TableHead>
             <TableBody sx={{ height: 500, overflow: "scroll" }}>
               {currency?.map((i, index) => (
-                // console.log(i.currency)
                 <TableRow
                   key={index}
                   sx={{ "&:last-child td, &:last-child th": { border: 0 } }}

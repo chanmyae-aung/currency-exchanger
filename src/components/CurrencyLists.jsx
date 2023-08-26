@@ -5,8 +5,7 @@ import { useSelector } from "react-redux";
 
 export default function CurrencyLists() {
   const { data } = useGetLatestQuery({ symbols: "USD", base: "MMK" });
-  console.log(data);
-
+  
   const exchangeSlice = useSelector((state) => state.exchangeSlice);
   const fromValue = exchangeSlice?.from;
   const toValue = exchangeSlice?.to;
