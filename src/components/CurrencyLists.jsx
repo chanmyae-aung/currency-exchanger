@@ -17,7 +17,7 @@ export default function CurrencyLists() {
       <div className="flex gap-10 my-10 rounded-lg">
         <div className="w-full">
           <Card
-            reverse={true}
+            // reverse={true}
             fromValue={fromValue}
             fullName={toFullName}
             toValue={toValue}

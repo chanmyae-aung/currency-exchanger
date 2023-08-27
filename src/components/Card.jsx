@@ -29,7 +29,7 @@ export default function CurrencyLists({
     <div className="w-full rounded-lg overflow-hidden">
       <div className="flex bg-secondary p-5 justify-center">
         <h2 className="text-lg font-bold">
-          {fullName} to {toFullName}
+          {reverse ? fullName : toFullName} to {!reverse ? fullName : toFullName}
         </h2>
       </div>
       <div>
