@@ -40,8 +40,8 @@ export default function RealTimeRate() {
   return (
     <main id="fluctuation">
       <img
-        className="w-full px-5 md:px-32 mb-10"
-        src="https://cdn.fbsbx.com/v/t59.2708-21/367434243_1745414275896019_172176976386414968_n.gif?_nc_cat=108&ccb=1-7&_nc_sid=041f46&_nc_ohc=3Vr6WHABZRcAX8ijI71&_nc_ht=cdn.fbsbx.com&oh=03_AdQtzmpF3S38RXHE2B8Iizxp2qCYvavxphYU7xf1hhBzhQ&oe=64EA763B"
+        className="w-full px-5 mb-10"
+        src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjNWkhzuw6M4iK4Hc6LjUXdAcBl1VG6LSSApqef3u0kmNuQWjEDxwKmBEDyLFJgGQJxrlKorhshM5HlzlDiFdKxN4Y57wZapGOV-b3Tj9zkj4V-mHSJaZA6IL-UATH4KWcQ2OIwjvRSJmGnk50izCTnpEwWVJfbDDKcrtbVMm92P81bBjMvaNkhAoEh1w/s1456/bsad.10221.gif"
         alt=""
       />
       <div className="text-center mb-5">
