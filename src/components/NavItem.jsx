@@ -24,7 +24,7 @@ export default function NavItem({toggleDrawer, anchor}) {
             className="cursor-pointer font-bold transition-all duration-100"
             spy={true}
             smooth={true}
-            offset={0}
+            offset={-80}
             duration={500}
             activeClass="nav-active"
           >

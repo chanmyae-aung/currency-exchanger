@@ -18,9 +18,9 @@ export default function CurrencyLists() {
         <div className="w-full">
           <Card
             reverse={true}
-            fromValue={toValue}
+            fromValue={fromValue}
             fullName={toFullName}
-            toValue={fromValue}
+            toValue={toValue}
             toFullName={fullName}
           />
         </div>

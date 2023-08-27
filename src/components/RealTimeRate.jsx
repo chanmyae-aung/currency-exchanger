@@ -50,7 +50,7 @@ export default function RealTimeRate() {
           (from 2023-07-25 to 2023-08-25)
         </p>
       </div>
-      <div className="px-5 md:px-0">
+      <div className="px-5 md:px-0 rounded-lg overflow-hidden">
         <TableContainer className="md:px-10" sx={{ maxHeight: 500 }} component={Paper}>
           <Table stickyHeader sx={{ minWidth: 650 }} aria-label="simple table">
             <TableHead >
